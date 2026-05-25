@@ -10,4 +10,3 @@ menu:
             icon: user
 ---
 
-WHO cares.

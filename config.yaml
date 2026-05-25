@@ -45,7 +45,7 @@ params:
 
     footer:
         since: 2020
-        customText: 与博客和解 & In memory of Coremint。
+        customText: 和解 & In memory of Coremint。
 
     dateFormat:
         published: Jan 02, 2006
@@ -215,6 +215,7 @@ menu:
           url: warren205011@outlook.com
           params:
               icon: mail
+
 related:
     includeNewer: true
     threshold: 60

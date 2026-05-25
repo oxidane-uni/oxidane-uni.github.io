@@ -6,6 +6,168 @@
         <description>Recent content in 技术 on Exnadio&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language><atom:link href="https://oxidane-uni.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>简明碧蓝航线反和谐教程</title>
+        <link>https://oxidane-uni.github.io/p/%E7%AE%80%E6%98%8E%E7%A2%A7%E8%93%9D%E8%88%AA%E7%BA%BF%E5%8F%8D%E5%92%8C%E8%B0%90%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Thu, 14 May 2026 11:45:14 +0800</pubDate>
+        
+        <guid>https://oxidane-uni.github.io/p/%E7%AE%80%E6%98%8E%E7%A2%A7%E8%93%9D%E8%88%AA%E7%BA%BF%E5%8F%8D%E5%92%8C%E8%B0%90%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="https://oxidane-uni.github.io/images/4featureimg/pfnqw.png" alt="Featured image of post 简明碧蓝航线反和谐教程" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
+&lt;p&gt;众所周知，由于有形的大手的原因，碧蓝航线的国服在部分内容的呈现方式上与外服是有差异的。但是，通过一些操作，我们是可以获得与外服相近的游戏体验的。这样的操作通常被称为“反和谐（fhx）”，本文要介绍的就是在 Android 系统下的碧蓝反和谐方法。&lt;/p&gt;
+&lt;p&gt;至于 iOS 的反和谐方法，请参照&lt;a class=&#34;link&#34; href=&#34;https://www.ghzs666.com/bbs/thread-78309&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这篇方法&lt;/a&gt;，若是旧版本的 iOS，也可以使用 Troll Store 安装文件管理器操作。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当然，使用模拟器/转投安卓是一劳永逸的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;免责声明&#34;&gt;免责声明&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本教程仅供个人学习、研究和技术交流，旨在探讨游戏客户端资源加载机制，教程中引用的所有游戏素材、名词及数据，其知识产权均归开发方及运营方所有。根据游戏《用户协议》，任何对客户端的修改、反编译或资源替换均属违规行为，由此可能引发的账号封禁、数据丢失、法律纠纷或其他一切损失，均需由操作者本人独立承担全部责任，本作者概不负责。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+&lt;p&gt;反和谐操作本质上就是修改&lt;strong&gt;游戏文件夹&lt;/strong&gt;下的 &lt;code&gt;localization.txt&lt;/code&gt; 文件（路径为： &lt;code&gt;./Android/data/com.bilibili.azurlane/files&lt;/code&gt;），只需将 txt 文件中的两个值由 &lt;strong&gt;&lt;code&gt;false&lt;/code&gt;&lt;/strong&gt; 改为 &lt;strong&gt;&lt;code&gt;true&lt;/code&gt;&lt;/strong&gt; 即可，结果如图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/260514/RDU.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;txt 文件位置&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/260514/Umf.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;修改前的 txt 文件&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;原文件如图所示&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/260514/FMd.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;修改好的 txt 文件&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;修改完应如图所示&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;进入游戏就可以看到反和谐生效，比如舰船的名字：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/260514/Hxd.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;显示和谐名的舰船&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/260514/Fhx.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;显示原名的舰船&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;可能遇到的问题&#34;&gt;可能遇到的问题&lt;/h2&gt;
+&lt;p&gt;理论上我们只需要打开文件管理器，修改好 localization.txt 后保存就可以打开碧蓝航线遨游了，但是，事实真的如此简单吗？&lt;/p&gt;
+&lt;p&gt;答案显然是否定的，否则就不会有这篇文章了。&lt;/p&gt;
+&lt;p&gt;当我们试图使用一般的文件管理器打开 &lt;code&gt;./Android/data&lt;/code&gt; 这个文件夹时，通常会一头撞上南墙：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/260514/Er1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;拒绝访问_1&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/260514/Er2.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;拒绝访问_2&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这是因为自 Android 11 起，Google 强制推行了分区存储机制以保护用户的隐私与应用数据安全。在这一机制下，应用只能只能在自己的私有目录下读写，以我使用的 Material Files 为例，作为第三方应用的它无法访问属于碧蓝航线的私有目录（各定制“系统”自带的文件管理亦是如此）。总体而言这并不是一件坏事——尤其是在流氓软件大行其道的情况下——但对我们来说就不是了。&lt;/p&gt;
+&lt;p&gt;不过解决办法也很简单：权限不够那就 Root。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/260514/Rfi.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;请求 Root 权限的 MF 界面&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;当然，对于大部分手机用户而言，Root 并不是一件容易的事情，而且为了一个手游的反和谐就去折腾 Root 恐怕也是搞错了什么。&lt;/p&gt;
+&lt;p&gt;那末，还有没有什么别的办法呢？有的兄弟，有的。&lt;/p&gt;
+&lt;h2 id=&#34;解决方法&#34;&gt;解决方法&lt;/h2&gt;
+&lt;p&gt;我们已经知道，第三方的文件管理器是无权访问 &lt;code&gt;./Android/data&lt;/code&gt; 下的应用私有目录的。但好在安卓的“系统文件管理应用”还是有读写这些文件夹的权限的。因此，我们需要做的就是打开这个“系统文件管理应用”，也就是 &lt;code&gt;DocumentsUI&lt;/code&gt;，用它来修改游戏文件夹下的文件。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;严格来说，DocumentsUI 并不是“系统文件管理应用”，而是安卓 SAF 框架的一部分&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;比如，这个&lt;a class=&#34;link&#34; href=&#34;https://github.com/tc7326/android11data&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;data访问器 App&lt;/a&gt;就能调起 DocumentsUI。在这个界面下就可以看到并访问 &lt;code&gt;./Android/data&lt;/code&gt; 下的目录了，接着依上文所述找到游戏文件夹并修改 &lt;code&gt;localization.txt&lt;/code&gt; 文件即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/260514/DoI.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;DocumentsUI 界面&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/260514/Duf.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;DocumentsUI 界面&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果打开 &lt;code&gt;./Android/data&lt;/code&gt; 后发现是空白的，试试刷新&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于 ColorOS，你也应该可以直接通过自带的文件管理器拉起 DocumentsUI，其它定制系统也可以尝试一下自带的文件管理是否有此功能&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/260514/Cpw.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ColorOS 文件管理器页面&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;点下“点击查看”就能打开 DocumentsUI&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
         <title>苹果 PowerBook 48pin SCSI 硬盘接口探究</title>
         <link>https://oxidane-uni.github.io/p/%E8%8B%B9%E6%9E%9C-powerbook-48pin-scsi-%E7%A1%AC%E7%9B%98%E6%8E%A5%E5%8F%A3%E6%8E%A2%E7%A9%B6/</link>
         <pubDate>Fri, 05 Jul 2024 15:33:07 +0800</pubDate>

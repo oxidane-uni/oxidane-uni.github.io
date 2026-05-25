@@ -31,7 +31,9 @@ draft: true
 
 > 需要注意的是 Wiki 上的这个配置推荐似乎是上古时代的，现代的 PC 应该是随便跑了
 
-至于系统似乎没什么要求，常见的Windows或是Linux都没啥问题，我这里使用的是Windows 11.
+
+至于系统似乎没什么要求，常见的 Windows 或是 Linux 都没啥问题，我这里使用的是 Windows 11。
+
 
 2. 下载Java
 
