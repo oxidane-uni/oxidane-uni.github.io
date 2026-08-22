@@ -13,9 +13,9 @@ draft: false
 ---
 
 ## 为何再次重建博客？  
-是，我知道我上次更新博客是2021年，但是这个博客我的确是没有忘的。~~（主播只是入狱了）~~  
-实际上这个博客是我在21年暑假用Hugo建的，使用的是Eureka主题。整体效果确实非常不错，但遗憾的是配置过程极其奇怪：虽说有专门的[说明文档](https://www.wangchucheng.com/zh/docs/hugo-eureka/),但是于我而言这玩意写得实在是不太友好~~太坏了，准备写邮件去骂.jpg~~，所以当时我的配置过程纯粹靠蒙，虽说最后还是搞出来了，但确实是一种折磨。  
-正好最近几天又想写博客了，就把Hugo又下了回来，结果升级Eureka主题的时候又折磨了好久，还是没整明白。
+是，我知道我上次更新博客是 2021 年，但是这个博客我的确是没有忘的。~~（主播只是入狱了）~~  
+实际上这个博客是我在 21 年暑假用Hugo建的，使用的是 Eureka 主题。整体效果确实非常不错，但遗憾的是配置过程极其奇怪：虽说有专门的[说明文档](https://www.wangchucheng.com/zh/docs/hugo-eureka/),但是于我而言这玩意写得实在是不太友好，所以当时我的配置过程纯粹靠蒙，虽说最后还是搞出来了，但确实是一种折磨。  
+正好最近几天又想写博客了，就把 Hugo 又下了回来，结果升级 Eureka 主题的时候又折磨了好久，还是没整明白。
 
 > 使用git submodule下来的Eureka配置后存在的大量报错，不断提示module未定义，反正也看不懂，干脆换主题了。  
   
@@ -24,7 +24,7 @@ draft: false
 ## Hugo之安装
 > “Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。 ” 
 
-本次我使用的是 Hugo v0.111.2 与 git v2.38.0 ，操作系统为 win 11。在 Hugo 的[releases](https://github.com/gohugoio/hugo/releases)和 Git 的[官网](https://git-scm.com/)都能很方便地下载。我选择的是 hugo_extended_0.111.2_windows-amd64.zip
+本次我使用的是 Hugo v0.111.2 与 git v2.38.0 ，操作系统为 Win 11。在 Hugo 的[releases](https://github.com/gohugoio/hugo/releases)和 Git 的[官网](https://git-scm.com/)都能很方便地下载。我选择的是 hugo_extended_0.111.2_windows-amd64.zip
 版本，以便后续折腾。下载完成后将压缩包里的东西解压至你喜欢的目录，再将该目录的路径添加到环境变量中以便后续调用。至于 Git 的安装，我就不再赘述了。  
 ![PATH](./images/4post/230422/path.png)  
 
@@ -54,7 +54,7 @@ draft: false
 - go module 安装（需要安装 Go 语言）
 - 本地安装
 
-我个人更推荐第一种方式，考虑到后续升级的难易，这算是最均衡的一种方式。具体的安装方法可以在各主题的说明中找到，我这里安装的是[Stack](https://stack.jimmycai.com/)。 
+我个人更推荐第一种方式，考虑到后续升级的难易，这算是最均衡的一种方式。具体的安装方法可以在各主题的说明中找到，我这里安装的是[ Stack](https://stack.jimmycai.com/)。 
 在网站目录下，输入： 
 ```
 git init
@@ -62,7 +62,7 @@ git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-them
 ```  
 等待下载完成后，便可以进行[配置](##主题配置历程)了。假如你想用其他方式安装，也可以参考[这里](https://stack.jimmycai.com/guide/getting-started)。  
 Stack本身有全英文的[说明文档](https://stack.jimmycai.com/config/)，我建议是将`./themes/hugo-theme-stack/exampleSite/content`和`./themes/hugo-theme-stack/config.yaml`直接夺舍，根据说明与需求修改，会剩下很多时间。  
-> 根据 Stack 的说明文档，Stack后续将改用.toml格式的Config文件，不过其配置步骤基本相同。 
+> 根据 Stack 的说明文档，Stack 后续将改用.toml格式的 Config 文件，不过其配置步骤基本相同。 
 
 ### 预览网站  
 很多教程会先教创建文章，不过我觉得配置完主题后还是先预览网站为好。Hugo的一大好处就是可以进行即时预览，你可以看到你每一步修改所产生的变化，也可以看到你是如何把一切搞崩溃的。
@@ -76,7 +76,7 @@ hugo server
 之后便可以在浏览器里打开`http://localhost:1313`预览。
 
 ### 创建文章  
-Hugo中的文章采用Markdown格式，通过以下命令你可以在`./content/post`路径下创建一篇文章：
+Hugo 中的文章采用 Markdown 格式，通过以下命令你可以在`./content/post`路径下创建一篇文章：
 `hugo new post/rebuild_blog.md`
 打开后你会发现生成的Markdown文档带有一段FrontMatter部分，具体的意思可以在[这里](https://stack.jimmycai.com/writing/frontmatter)找到。大体上可以认为是文档的一些属性。  
 ![frontmatter](./images/4post/230422/frontmatter.png)
@@ -114,20 +114,19 @@ hugo
 > 推送成功后，进入仓库的设置页面，点击侧栏的 Pages，再把 Source 选项改为 main 分支下的`docs`目录，这样 Github Pages 就会根据我们推送上去的`docs`目录里的静态页面来显示网站。这里指定`docs`的好处是还可以把网站的所有文件都备份到仓库里（不包含以 submodule 形式添加主题，详见参考链接）。最后在与仓库同名的网站 https://zhajiman.github.io/ 上看看自己的博客吧！  
 
 我补充几个细节：
-1. `git push -u origin master //我采用了master分支`后是要验证github账号的（也许只有首次有？），假如你没有，那么我建议你读第2点。
-2. Github是有带GUI的客户端的，git苦手可以考虑用这个。  
-
+1. `git push -u origin master //我采用了master分支`后是要验证 github 账号的（也许只有首次有？），假如你没有，那么我建议你读第2点。
+2. Github 是有带 GUI 的客户端的，git 苦手可以考虑用这个。  
+ 
 ## 主题配置历程  
 由于主题的配置是个个体差异极大的过程，因此我不会事无巨细地说明每一个过程，而是说明几个小点。
 
 ### 网站图标更改  
-其实很简单，但是我被一个issue误导了，哈哈。  
-将图片生成的favicon文件夹放在`./static`文件夹下，然后在`cofig.yaml`下指定：`favicon: /favicon/favicon.ico `就行。
+其实很简单，将图片生成的 favicon 文件夹放在`./static`文件夹下，然后在`cofig.yaml`下指定：`favicon: /favicon/favicon.ico `就行。
 
 ### 评论系统之接入 
 ~~忘了Uttrances怎么配置的了啊嗯，鸽了。~~
 
-已将评论系统改为giscus，配置过程见[这里]()
+已将评论系统改为 giscus，配置过程见[这里]()
 
 ## Stack主题自定义  
 首先放一下对比图：  
@@ -135,7 +134,7 @@ hugo
 ![](./images/4post/230422/lightmode_modified.png)  
 
 ### 改善浅色模式可读性
-配置完 Stack 后，我并不是很满意，假如说满分100的话我只能打个70分左右。最大的不满在于其浅色模式下可读性实在是过于糟糕,你可以在 [Demo网站](https://demo.stack.jimmycai.com/) 上感受一下，我不清楚为什么作者采用了`#bababa`这个颜色，导致其与背景的对比度来到了可怜的1.94，简直就是一场彻头彻尾的灾难。  
+配置完 Stack 后，我并不是很满意，假如说满分100的话我只能打个70分左右。最大的不满在于其浅色模式下可读性实在是过于糟糕,你可以在 [ Demo 网站](https://demo.stack.jimmycai.com/) 上感受一下，我不清楚为什么作者采用了`#bababa`这个颜色，导致其与背景的对比度来到了可怜的1.94，简直就是一场彻头彻尾的灾难。  
 不过好在 Stack 主题预留了自定义的空间，详见[官网的说明](https://stack.jimmycai.com/guide/modify-theme)。这里具体介绍下自定义的方法：  
 在Stack以及很多主题中，主题文件夹下的`assets/scss`下都提供了一个供用户自定义的`custom.scss`文件。  
 > 原理便是在最后引入这个文件，使其位于最终css文件的末尾，从而覆盖原先的属性，达到“自定义”的效果。  
@@ -171,7 +170,7 @@ hugo
 
 Tag的修改我也说下，用上面的方法找到代码，发现：  
 ![](./images/4post/230422/tagcolorcode.png)  
-> Is this LGBT light?  
+> 何意味?  
 
 然后把能找到这些颜色的地方全图图了：  
 ```css
@@ -190,9 +189,9 @@ Tag的修改我也说下，用上面的方法找到代码，发现：
 **Note:**  
 改完之后我发现分类的 Tag 还是存在问题，虽说前几个颜色是对的，但是越往后走居然开始变色了：  
 ![](./images/4post/230422/case.png)  
-此时即使在custom.scss中指定了颜色也没啥用，看了下这玩意居然在是element.style写死的，多少有点幽默：  
+此时即使在custom.scss中指定了颜色也没啥用，看了下这玩意居然在是 element.style 写死的，多少有点搞：  
 ![](./images/4post/230422/element_style.png)  
-于是便需要在源代码后面加上`!important`，Done。  
+于是便需要在代码后面加上`!important`
 现代码如下：
 ```css
 .article-list article:nth-child(n) .article-category a {
@@ -250,7 +249,7 @@ Tag的修改我也说下，用上面的方法找到代码，发现：
 ```  
 即可。
 
-### ~~老头~~滚动条修改  
+### 滚动条修改  
 同上，不喜欢，[仙贝代码](https://xrg.fj.cn/p/hugo-stack%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E5%B0%8F%E8%AE%B0/#%E6%BB%9A%E5%8A%A8%E6%9D%A1%E7%BE%8E%E5%8C%96)，添加：  
 ```scss
 html{
@@ -276,8 +275,8 @@ html{
 ```
 
 ### 图标添加与修改  
-Stack主题带了几个很好看的Tabler图标，可惜并不全，部分缺失的图标要手动添加。  
-例如我想添加一个比比汗丽丽的图标，在[Tabler官网](https://tabler-icons.io/)搜索发现居然真有：  
+Stack 主题带了几个很好看的 Tabler 图标，可惜并不全，部分缺失的图标要手动添加。  
+例如我想添加一个比比汗丽丽的图标，在[ Tabler 官网](https://tabler-icons.io/)搜索发现居然真有：  
 ![](./images/4post/230422/searchresult.png)  
 将svg文件其下载到`.\themes\hugo-theme-stack\assets\icons`中，再调用即可。  
 ![](./images/4post/230422/implement.png)
@@ -335,16 +334,16 @@ Stack主题带了几个很好看的Tabler图标，可惜并不全，部分缺失
 顺带一提，想改中文翻译直接去`\i18n\zh-cn.yaml`中修改即可（暗色模式这翻译也太怪了）。
 
 ### 添加字数统计  
-Stack本身是不带字数统计的，但是Hugo本身是支持进行字数统计的。所以我决定，写一段字数统计的代码。
-Stack的文章页面是由三个html控制的：  
+Stack 本身是不带字数统计的，但是Hugo本身是支持进行字数统计的。
+已知，Stack 的文章页面是由三个 html 控制的：  
 ```
 .  
 ├── details.html        
 ├── content.html     
 └── footer.html   
 ```
-所以在`details.html`中加入相应的字数统计代码就行了。
-在互联网上找了一圈后，我发现之前就有人写过[相关代码](https://mantyke.icu/posts/2021/f9f0ec87/)。  
+所以在 `details.html` 中加入相应的字数统计代码就行了。
+在互联网上一番搜索后，我发现之前就有人写过[相关代码](https://mantyke.icu/posts/2021/f9f0ec87/)。  
 ```html
 {{ if .Site.Params.article.readingTime }} 
   <div>
@@ -354,7 +353,7 @@ Stack的文章页面是由三个html控制的：
       </time>
   </div>
 ```
-然而这段代码没有多语言支持，所以我决定让事情变得更复杂：**全面照抄**Stack实现阅读时长的方式。  
+然而这段代码没有多语言支持，所以我决定让事情变得更复杂：全面照抄 Stack 实现阅读时长的方式。  
 首先在`congfig.yaml`中的`.params.article`中添加：
 ```yaml
 wordCount: true
@@ -370,16 +369,16 @@ wordCount: true
    </div>
  {{ end }}
 ```
-之后只要添加多语言支持，也就是在`i18n`文件夹中修改对应语言的.yaml文件就好了。以英文为例，在`.\i18n\en.yaml`中加上：
+之后只要添加多语言支持，也就是在`i18n`文件夹中修改对应语言的.yaml文件。以英文为例，在`.\i18n\en.yaml`中加上：
 ```yaml
 wordCount:
   other: "{{.Count}} words"
 ```
-便完事大成了。反正一切主打的就是一个**readTime在哪我在哪**  
+便完事大成了。反正一切主打的就是一个 readTime 在哪我在哪 
 > 顺带改了下图标，参考[这里](###图标添加与修改 )
 
 ### 文章修改时间显示  
-修改时间就没有字数统计这么麻烦了。Stack本身自带修改时间显示，不过这玩意放在了最底下，不太直观，我就把它提上来了。  
+修改时间就没有字数统计这么麻烦了。Stack 本身自带修改时间显示，不过这玩意放在了最底下，不太直观，我就把它提上来了。  
 源代码看位置就在`.\layouts\partials\article\components\footer.html`里，果不其然：
 ```html
 {{- if ne .Lastmod .Date -}}
@@ -434,23 +433,15 @@ frontmatter:
 
 
 ## 目前仍未完成的部分  
-当然目前这个网站仍存在以下问题以及遗憾：  
+当然，目前这个网站还是有一些问题的：  
 1. ~~过往文章未恢复~~  
 2. ~~评论系统未接入~~  
-3. 部分界面还未配置好 
+3. ~~部分界面还未配置好~~ 
 4. ~~网站图标未设置（其实是还没做）~~  
 5. ~~没有文章修改时间显示~~
-6. 洋文站点还没完成
-7. ~~Category机制还没搞懂~~ ~~他妈的，实在搞不懂。~~ Fuck,that's a feature. 
+6. ~~洋文站点还没完成(已躺平)~~
+ 
 
-以上，**下次**大概的确会修复！  
-
-![](./images/4post/230422/nextepisode.png)
-## 预告部分
-### 主题配置历程  
-### Markdown小教程
-
-**つづく**  
 
 ## 参考链接
 [用 Hugo 重新搭建博客](https://zhajiman.github.io/post/rebuild_blog/)  

@@ -30,7 +30,7 @@ draft: 0
 
 ## 介绍
 
-反和谐操作本质上就是修改**游戏文件夹**下的 `localization.txt` 文件（路径为： `./Android/data/com.bilibili.azurlane/files`），只需将 txt 文件中的两个值由 **`false`** 改为 **`true`** 即可，结果如图所示：
+反和谐操作本质上就是修改**游戏文件夹**下的 `localization.txt` 文件（路径为： `./Android/data/com.bilibili.azurlane/files`），只需将 txt 文件中的两个值由 **`false`** 改为 **`true`** 即可，如图：
 
 ![txt 文件位置](./images/4post/260514/RDU.png)
 

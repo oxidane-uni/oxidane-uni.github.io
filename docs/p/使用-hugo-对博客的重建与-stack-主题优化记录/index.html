@@ -11,7 +11,7 @@
 <meta property='og:description' content='你不觉得图文无关很酷么？'>
 <meta property='og:url' content='https://oxidane-uni.github.io/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/'>
 <meta property='og:site_name' content='Exnadio&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2023-04-22T14:56:05&#43;08:00'/><meta property='article:modified_time' content='2024-07-17T23:44:09&#43;08:00'/><meta property='og:image' content='https://oxidane-uni.github.io/images/4featureimg/azl.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2023-04-22T14:56:05&#43;08:00'/><meta property='article:modified_time' content='2026-08-22T16:13:01&#43;08:00'/><meta property='og:image' content='https://oxidane-uni.github.io/images/4featureimg/azl.jpg' />
 <meta name="twitter:title" content="使用 Hugo 对博客的重建与 Stack 主题优化记录">
 <meta name="twitter:description" content="你不觉得图文无关很酷么？"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://oxidane-uni.github.io/images/4featureimg/azl.jpg' />
@@ -342,7 +342,7 @@
       <ol>
         <li><a href="#改善浅色模式可读性">改善浅色模式可读性</a></li>
         <li><a href="#修改网站布局">修改网站布局</a></li>
-        <li><a href="#老头滚动条修改">老头滚动条修改</a></li>
+        <li><a href="#滚动条修改">滚动条修改</a></li>
         <li><a href="#图标添加与修改">图标添加与修改</a></li>
         <li><a href="#添加字数统计">添加字数统计</a></li>
         <li><a href="#文章修改时间显示">文章修改时间显示</a></li>
@@ -350,12 +350,6 @@
       </ol>
     </li>
     <li><a href="#目前仍未完成的部分">目前仍未完成的部分</a></li>
-    <li><a href="#预告部分">预告部分</a>
-      <ol>
-        <li><a href="#主题配置历程-1">主题配置历程</a></li>
-        <li><a href="#markdown小教程">Markdown小教程</a></li>
-      </ol>
-    </li>
     <li><a href="#参考链接">参考链接</a></li>
   </ol>
 </nav>
@@ -431,7 +425,7 @@
 
 
 
-            <time class="article-lastmod">Jul 17, 2024</time>
+            <time class="article-lastmod">Aug 22, 2026</time>
         </div>
         
 
@@ -464,7 +458,7 @@
 
 
                 <time class="article-words">
-                    5256 字
+                    5027 字
                 </time>
             </div>
         
@@ -481,10 +475,10 @@
     
     
     <h2 id="为何再次重建博客">为何再次重建博客？</h2>
-<p>是，我知道我上次更新博客是2021年，但是这个博客我的确是没有忘的。<del>（主播只是入狱了）</del><br>
-实际上这个博客是我在21年暑假用Hugo建的，使用的是Eureka主题。整体效果确实非常不错，但遗憾的是配置过程极其奇怪：虽说有专门的<a class="link" href="https://www.wangchucheng.com/zh/docs/hugo-eureka/"  target="_blank" rel="noopener"
-    >说明文档</a>,但是于我而言这玩意写得实在是不太友好<del>太坏了，准备写邮件去骂.jpg</del>，所以当时我的配置过程纯粹靠蒙，虽说最后还是搞出来了，但确实是一种折磨。<br>
-正好最近几天又想写博客了，就把Hugo又下了回来，结果升级Eureka主题的时候又折磨了好久，还是没整明白。</p>
+<p>是，我知道我上次更新博客是 2021 年，但是这个博客我的确是没有忘的。<del>（主播只是入狱了）</del><br>
+实际上这个博客是我在 21 年暑假用Hugo建的，使用的是 Eureka 主题。整体效果确实非常不错，但遗憾的是配置过程极其奇怪：虽说有专门的<a class="link" href="https://www.wangchucheng.com/zh/docs/hugo-eureka/"  target="_blank" rel="noopener"
+    >说明文档</a>,但是于我而言这玩意写得实在是不太友好，所以当时我的配置过程纯粹靠蒙，虽说最后还是搞出来了，但确实是一种折磨。<br>
+正好最近几天又想写博客了，就把 Hugo 又下了回来，结果升级 Eureka 主题的时候又折磨了好久，还是没整明白。</p>
 <blockquote>
 <p>使用git submodule下来的Eureka配置后存在的大量报错，不断提示module未定义，反正也看不懂，干脆换主题了。</p>
 </blockquote>
@@ -493,7 +487,7 @@
 <blockquote>
 <p>“Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。 ”</p>
 </blockquote>
-<p>本次我使用的是 Hugo v0.111.2 与 git v2.38.0 ，操作系统为 win 11。在 Hugo 的<a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
+<p>本次我使用的是 Hugo v0.111.2 与 git v2.38.0 ，操作系统为 Win 11。在 Hugo 的<a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
     >releases</a>和 Git 的<a class="link" href="https://git-scm.com/"  target="_blank" rel="noopener"
     >官网</a>都能很方便地下载。我选择的是 hugo_extended_0.111.2_windows-amd64.zip
 版本，以便后续折腾。下载完成后将压缩包里的东西解压至你喜欢的目录，再将该目录的路径添加到环境变量中以便后续调用。至于 Git 的安装，我就不再赘述了。<br>
@@ -547,7 +541,7 @@
 <li>本地安装</li>
 </ul>
 <p>我个人更推荐第一种方式，考虑到后续升级的难易，这算是最均衡的一种方式。具体的安装方法可以在各主题的说明中找到，我这里安装的是<a class="link" href="https://stack.jimmycai.com/"  target="_blank" rel="noopener"
-    >Stack</a>。
+    > Stack</a>。
 在网站目录下，输入：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -564,7 +558,7 @@
 Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/config/"  target="_blank" rel="noopener"
     >说明文档</a>，我建议是将<code>./themes/hugo-theme-stack/exampleSite/content</code>和<code>./themes/hugo-theme-stack/config.yaml</code>直接夺舍，根据说明与需求修改，会剩下很多时间。</p>
 <blockquote>
-<p>根据 Stack 的说明文档，Stack后续将改用.toml格式的Config文件，不过其配置步骤基本相同。</p>
+<p>根据 Stack 的说明文档，Stack 后续将改用.toml格式的 Config 文件，不过其配置步骤基本相同。</p>
 </blockquote>
 <h3 id="预览网站">预览网站</h3>
 <p>很多教程会先教创建文章，不过我觉得配置完主题后还是先预览网站为好。Hugo的一大好处就是可以进行即时预览，你可以看到你每一步修改所产生的变化，也可以看到你是如何把一切搞崩溃的。
@@ -591,7 +585,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 当然你也可以加上一些 flag 来达到一些其他目的：比如指定主题的<code>--theme=Stack</code>和关闭快速渲染的<code>--disableFastRender</code>等，具体可以查阅文档。<br>
 之后便可以在浏览器里打开<code>http://localhost:1313</code>预览。</p>
 <h3 id="创建文章">创建文章</h3>
-<p>Hugo中的文章采用Markdown格式，通过以下命令你可以在<code>./content/post</code>路径下创建一篇文章：
+<p>Hugo 中的文章采用 Markdown 格式，通过以下命令你可以在<code>./content/post</code>路径下创建一篇文章：
 <code>hugo new post/rebuild_blog.md</code>
 打开后你会发现生成的Markdown文档带有一段FrontMatter部分，具体的意思可以在<a class="link" href="https://stack.jimmycai.com/writing/frontmatter"  target="_blank" rel="noopener"
     >这里</a>找到。大体上可以认为是文档的一些属性。<br>
@@ -649,17 +643,16 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </blockquote>
 <p>我补充几个细节：</p>
 <ol>
-<li><code>git push -u origin master //我采用了master分支</code>后是要验证github账号的（也许只有首次有？），假如你没有，那么我建议你读第2点。</li>
-<li>Github是有带GUI的客户端的，git苦手可以考虑用这个。</li>
+<li><code>git push -u origin master //我采用了master分支</code>后是要验证 github 账号的（也许只有首次有？），假如你没有，那么我建议你读第2点。</li>
+<li>Github 是有带 GUI 的客户端的，git 苦手可以考虑用这个。</li>
 </ol>
 <h2 id="主题配置历程">主题配置历程</h2>
 <p>由于主题的配置是个个体差异极大的过程，因此我不会事无巨细地说明每一个过程，而是说明几个小点。</p>
 <h3 id="网站图标更改">网站图标更改</h3>
-<p>其实很简单，但是我被一个issue误导了，哈哈。<br>
-将图片生成的favicon文件夹放在<code>./static</code>文件夹下，然后在<code>cofig.yaml</code>下指定：<code>favicon: /favicon/favicon.ico </code>就行。</p>
+<p>其实很简单，将图片生成的 favicon 文件夹放在<code>./static</code>文件夹下，然后在<code>cofig.yaml</code>下指定：<code>favicon: /favicon/favicon.ico </code>就行。</p>
 <h3 id="评论系统之接入">评论系统之接入</h3>
 <p><del>忘了Uttrances怎么配置的了啊嗯，鸽了。</del></p>
-<p>已将评论系统改为giscus，配置过程见<a class="link" href="" >这里</a></p>
+<p>已将评论系统改为 giscus，配置过程见<a class="link" href="" >这里</a></p>
 <h2 id="stack主题自定义">Stack主题自定义</h2>
 <p>首先放一下对比图：<br>
 <img src="/images/4post/230422/lightmode_default.png"
@@ -680,7 +673,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 ></p>
 <h3 id="改善浅色模式可读性">改善浅色模式可读性</h3>
 <p>配置完 Stack 后，我并不是很满意，假如说满分100的话我只能打个70分左右。最大的不满在于其浅色模式下可读性实在是过于糟糕,你可以在 <a class="link" href="https://demo.stack.jimmycai.com/"  target="_blank" rel="noopener"
-    >Demo网站</a> 上感受一下，我不清楚为什么作者采用了<code>#bababa</code>这个颜色，导致其与背景的对比度来到了可怜的1.94，简直就是一场彻头彻尾的灾难。<br>
+    > Demo 网站</a> 上感受一下，我不清楚为什么作者采用了<code>#bababa</code>这个颜色，导致其与背景的对比度来到了可怜的1.94，简直就是一场彻头彻尾的灾难。<br>
 不过好在 Stack 主题预留了自定义的空间，详见<a class="link" href="https://stack.jimmycai.com/guide/modify-theme"  target="_blank" rel="noopener"
     >官网的说明</a>。这里具体介绍下自定义的方法：<br>
 在Stack以及很多主题中，主题文件夹下的<code>assets/scss</code>下都提供了一个供用户自定义的<code>custom.scss</code>文件。</p>
@@ -772,7 +765,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 ></p>
 <blockquote>
-<p>Is this LGBT light?</p>
+<p>何意味?</p>
 </blockquote>
 <p>然后把能找到这些颜色的地方全图图了：</p>
 <div class="highlight"><div class="chroma">
@@ -809,7 +802,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 	
 ><br>
-此时即使在custom.scss中指定了颜色也没啥用，看了下这玩意居然在是element.style写死的，多少有点幽默：<br>
+此时即使在custom.scss中指定了颜色也没啥用，看了下这玩意居然在是 element.style 写死的，多少有点搞：<br>
 <img src="/images/4post/230422/element_style.png"
 	
 	
@@ -818,7 +811,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 	
 ><br>
-于是便需要在源代码后面加上<code>!important</code>，Done。<br>
+于是便需要在代码后面加上<code>!important</code>
 现代码如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -927,7 +920,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>即可。</p>
-<h3 id="老头滚动条修改"><del>老头</del>滚动条修改</h3>
+<h3 id="滚动条修改">滚动条修改</h3>
 <p>同上，不喜欢，<a class="link" href="https://xrg.fj.cn/p/hugo-stack%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E5%B0%8F%E8%AE%B0/#%E6%BB%9A%E5%8A%A8%E6%9D%A1%E7%BE%8E%E5%8C%96"  target="_blank" rel="noopener"
     >仙贝代码</a>，添加：</p>
 <div class="highlight"><div class="chroma">
@@ -977,9 +970,9 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="图标添加与修改">图标添加与修改</h3>
-<p>Stack主题带了几个很好看的Tabler图标，可惜并不全，部分缺失的图标要手动添加。<br>
+<p>Stack 主题带了几个很好看的 Tabler 图标，可惜并不全，部分缺失的图标要手动添加。<br>
 例如我想添加一个比比汗丽丽的图标，在<a class="link" href="https://tabler-icons.io/"  target="_blank" rel="noopener"
-    >Tabler官网</a>搜索发现居然真有：<br>
+    > Tabler 官网</a>搜索发现居然真有：<br>
 <img src="/images/4post/230422/searchresult.png"
 	
 	
@@ -1107,8 +1100,8 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 ><br>
 顺带一提，想改中文翻译直接去<code>\i18n\zh-cn.yaml</code>中修改即可（暗色模式这翻译也太怪了）。</p>
 <h3 id="添加字数统计">添加字数统计</h3>
-<p>Stack本身是不带字数统计的，但是Hugo本身是支持进行字数统计的。所以我决定，写一段字数统计的代码。
-Stack的文章页面是由三个html控制的：</p>
+<p>Stack 本身是不带字数统计的，但是Hugo本身是支持进行字数统计的。
+已知，Stack 的文章页面是由三个 html 控制的：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1123,8 +1116,8 @@ Stack的文章页面是由三个html控制的：</p>
 </span></span><span class="line"><span class="cl">└── footer.html   
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>所以在<code>details.html</code>中加入相应的字数统计代码就行了。
-在互联网上找了一圈后，我发现之前就有人写过<a class="link" href="https://mantyke.icu/posts/2021/f9f0ec87/"  target="_blank" rel="noopener"
+</div><p>所以在 <code>details.html</code> 中加入相应的字数统计代码就行了。
+在互联网上一番搜索后，我发现之前就有人写过<a class="link" href="https://mantyke.icu/posts/2021/f9f0ec87/"  target="_blank" rel="noopener"
     >相关代码</a>。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1146,7 +1139,7 @@ Stack的文章页面是由三个html控制的：</p>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>然而这段代码没有多语言支持，所以我决定让事情变得更复杂：<strong>全面照抄</strong>Stack实现阅读时长的方式。<br>
+</div><p>然而这段代码没有多语言支持，所以我决定让事情变得更复杂：全面照抄 Stack 实现阅读时长的方式。<br>
 首先在<code>congfig.yaml</code>中的<code>.params.article</code>中添加：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1179,7 +1172,7 @@ Stack的文章页面是由三个html控制的：</p>
 </span></span><span class="line"><span class="cl"> {{ end }}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>之后只要添加多语言支持，也就是在<code>i18n</code>文件夹中修改对应语言的.yaml文件就好了。以英文为例，在<code>.\i18n\en.yaml</code>中加上：</p>
+</div><p>之后只要添加多语言支持，也就是在<code>i18n</code>文件夹中修改对应语言的.yaml文件。以英文为例，在<code>.\i18n\en.yaml</code>中加上：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1190,12 +1183,12 @@ Stack的文章页面是由三个html控制的：</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{{.Count}} words&#34;</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>便完事大成了。反正一切主打的就是一个<strong>readTime在哪我在哪</strong></p>
+</div><p>便完事大成了。反正一切主打的就是一个 readTime 在哪我在哪</p>
 <blockquote>
 <p>顺带改了下图标，参考<a class="link" href="###%e5%9b%be%e6%a0%87%e6%b7%bb%e5%8a%a0%e4%b8%8e%e4%bf%ae%e6%94%b9" >这里</a></p>
 </blockquote>
 <h3 id="文章修改时间显示">文章修改时间显示</h3>
-<p>修改时间就没有字数统计这么麻烦了。Stack本身自带修改时间显示，不过这玩意放在了最底下，不太直观，我就把它提上来了。<br>
+<p>修改时间就没有字数统计这么麻烦了。Stack 本身自带修改时间显示，不过这玩意放在了最底下，不太直观，我就把它提上来了。<br>
 源代码看位置就在<code>.\layouts\partials\article\components\footer.html</code>里，果不其然：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1301,29 +1294,15 @@ Stack的文章页面是由三个html控制的：</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="目前仍未完成的部分">目前仍未完成的部分</h2>
-<p>当然目前这个网站仍存在以下问题以及遗憾：</p>
+<p>当然，目前这个网站还是有一些问题的：</p>
 <ol>
 <li><del>过往文章未恢复</del></li>
 <li><del>评论系统未接入</del></li>
-<li>部分界面还未配置好</li>
+<li><del>部分界面还未配置好</del></li>
 <li><del>网站图标未设置（其实是还没做）</del></li>
 <li><del>没有文章修改时间显示</del></li>
-<li>洋文站点还没完成</li>
-<li><del>Category机制还没搞懂</del> <del>他妈的，实在搞不懂。</del> Fuck,that&rsquo;s a feature.</li>
+<li><del>洋文站点还没完成(已躺平)</del></li>
 </ol>
-<p>以上，<strong>下次</strong>大概的确会修复！</p>
-<p><img src="/images/4post/230422/nextepisode.png"
-	
-	
-	
-	loading="lazy"
-	
-	
-></p>
-<h2 id="预告部分">预告部分</h2>
-<h3 id="主题配置历程-1">主题配置历程</h3>
-<h3 id="markdown小教程">Markdown小教程</h3>
-<p><strong>つづく</strong></p>
 <h2 id="参考链接">参考链接</h2>
 <p><a class="link" href="https://zhajiman.github.io/post/rebuild_blog/"  target="_blank" rel="noopener"
     >用 Hugo 重新搭建博客</a><br>
@@ -1371,7 +1350,7 @@ Stack的文章页面是由三个html控制的：</p>
 
 
         <span>
-            最后更新于 Jul 17, 2024 23:44 CST
+            最后更新于 Aug 22, 2026 16:13 CST
         </span>
     </section></footer>
 
