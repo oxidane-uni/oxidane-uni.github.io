@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>此博客已迁移至新网站 / This Blog Has Moved</title>
+
+  <!-- 新地址：SEO 用 -->
+  <link rel="canonical" href="https://exnadio.github.io">
+
+  <!-- 无 JS 时的兜底跳转；2 表示 2 秒后跳转 -->
+  <meta http-equiv="refresh" content="2; url=https://exnadio.github.io">
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 640px;
+      margin: 15vh auto;
+      padding: 0 20px;
+      line-height: 1.7;
+      color: #222;
+    }
+    a { color: #0366d6; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <h1>
+    <span class="i18n-zh">博客已迁移</span>
+    <span class="i18n-en">Blog Moved</span>
+  </h1>
+
+  <p class="i18n-zh">
+    本博客已迁移到新地址，将在 2 秒后自动跳转。
+  </p>
+  <p class="i18n-en">
+    This page has moved. You will be redirected in 2 seconds.
+  </p>
+
+  <p>
+    <a href="https://exnadio.github.io">
+      <span class="i18n-zh">前往新页面</span>
+      <span class="i18n-en">Go to the new page</span>
+    </a>
+  </p>
+
+  <p class="i18n-zh">如果没有自动跳转，请点击上面的链接。</p>
+  <p class="i18n-en">If you are not redirected automatically, please click the link above.</p>
+
+  <script>
+    (function () {
+      var NEW_URL = "https://exnadio.github.io";
+      var DELAY = 2000; // 毫秒；想立即跳转改成 0
+
+      // 根据浏览器语言选择显示中文还是英文
+      var lang = (navigator.language || navigator.userLanguage || "zh").toLowerCase();
+      var isZh = lang.indexOf("zh") === 0;
+
+      document.documentElement.lang = isZh ? "zh-CN" : "en";
+
+      document.querySelectorAll(".i18n-zh").forEach(function (el) {
+        el.hidden = !isZh;
+      });
+      document.querySelectorAll(".i18n-en").forEach(function (el) {
+        el.hidden = isZh;
+      });
+
+      // 保留原 URL 的查询参数和锚点，例如 ?a=1#section
+      var target = NEW_URL + window.location.search + window.location.hash;
+
+      setTimeout(function () {
+        window.location.replace(target);
+      }, DELAY);
+    })();
+  </script>
+</body>
+</html>
